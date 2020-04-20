@@ -42,5 +42,59 @@ namespace asp.netloginpage
              
             }
         }
+
+        public void prueba1()
+        {
+            using (SqlConnection sqlCon = new SqlConnection(@"Data Source=(local);initial Catalog=LoginDB;Integrated Security=True"))
+            {
+
+                sqlCon.Open();
+
+                string query = "SELECT COUNT(1) FROM tblUser WHERE username = @username AND password=@password";
+                SqlCommand sqlCmd = new SqlCommand(query, sqlCon);
+                sqlCmd.Parameters.AddWithValue("@username", txtUserName.Text.Trim());
+                sqlCmd.Parameters.AddWithValue("@password", txtPassword.Text.Trim());
+                int count = Convert.ToInt32(sqlCmd.ExecuteScalar());
+
+                if (count == 1)
+                {
+                    Session["username"] = txtUserName.Text.Trim();
+                    Response.Redirect("home.aspx");
+                }
+                else
+                {
+                    lblErrorMessage.Visible = true;
+                }
+
+
+            }
+        }
+
+        public void prueba2()
+        {
+            using (SqlConnection sqlCon = new SqlConnection(@"Data Source=(local);initial Catalog=LoginDB;Integrated Security=True"))
+            {
+
+                sqlCon.Open();
+
+                string query = "SELECT COUNT(1) FROM tblUser WHERE username = @username AND password=@password";
+                SqlCommand sqlCmd = new SqlCommand(query, sqlCon);
+                sqlCmd.Parameters.AddWithValue("@username", txtUserName.Text.Trim());
+                sqlCmd.Parameters.AddWithValue("@password", txtPassword.Text.Trim());
+                int count = Convert.ToInt32(sqlCmd.ExecuteScalar());
+
+                if (count == 1)
+                {
+                    Session["username"] = txtUserName.Text.Trim();
+                    Response.Redirect("home.aspx");
+                }
+                else
+                {
+                    lblErrorMessage.Visible = true;
+                }
+
+
+            }
+        }
     }
 }

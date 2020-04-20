@@ -52,7 +52,6 @@ C:\Users\Steven\source\repos\asp.netloginpage\asp.netloginpage\bin\roslyn\VBCSCo
 C:\Users\Steven\source\repos\asp.netloginpage\asp.netloginpage\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\Steven\source\repos\asp.netloginpage\asp.netloginpage\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\Steven\source\repos\asp.netloginpage\asp.netloginpage\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Steven\source\repos\asp.netloginpage\asp.netloginpage\obj\Debug\asp.netloginpage.csprojAssemblyReference.cache
 C:\Users\Steven\source\repos\asp.netloginpage\asp.netloginpage\obj\Debug\asp.netloginpage.csproj.CoreCompileInputs.cache
 C:\Users\Steven\source\repos\asp.netloginpage\asp.netloginpage\obj\Debug\asp.netloginpage.csproj.CopyComplete
 C:\Users\Steven\source\repos\asp.netloginpage\asp.netloginpage\obj\Debug\asp.netloginpage.dll
